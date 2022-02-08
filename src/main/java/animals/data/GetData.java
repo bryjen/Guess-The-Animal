@@ -3,7 +3,6 @@ package animals.data;
 import animals.Print;
 import animals.game.Game;
 import animals.game.Methods;
-import org.jetbrains.annotations.TestOnly;
 
 import java.text.DecimalFormat;
 import java.util.*;
@@ -318,7 +317,6 @@ public class GetData {
         printTraverse(tree);
     }
 
-    @TestOnly
     public static void test(String[] args) {
         Tree tree = new Tree("cat", "a cat");
         tree.extend("shark", "a shark", "It is a mammal", "Is it a mammal?", true);

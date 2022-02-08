@@ -31,7 +31,7 @@ public class App_eo extends ListResourceBundle {
                 //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //
 
                 {"animal.wantLearn", "Mi volas lerni pri bestoj."},
-                {"animal.askFavorite", "Kiun beston vi plej ŝatas?"},
+                {"animal.askFavorite", "Kiun beston vi plej satas?"},
                 {"animal.nice", new String[] {"Bela!", "Mirinde!", "Mojosa!", "Bonege!", "Mirinda!"}},
                 {"animal.learnedMuch", "Mi lernis tiom multe pri bestoj!"},
 
@@ -63,13 +63,13 @@ public class App_eo extends ListResourceBundle {
                 // The Guessing Game
 
                 {"game.play", "Ni ludu!"},
-                {"game.think", "Vi pensu pri besto, kaj mi divenos ĝin."},
+                {"game.think", "Vi pensu pri besto, kaj mi divenos gin."},
                 {"game.enter", "Premu enen kiam vi pretas."},
-                {"game.win", "Bonege, ke mi trafis ĝin ĝuste!"},
+                {"game.win", "Bonege, ke mi trafis gin guste!"},
 
                 {"game.giveUp", "Mi rezignas. Kiun beston vi havas en la kapo?"},
                 {"game.isCorrect", (UnaryOperator<String>) animalWithPrefix -> {
-                    return "Ĉu la aserto ĝustas por la " + animalWithPrefix + "?";
+                    return "Ĉu la aserto gustas por la " + animalWithPrefix + "?";
                 }},
                 {"game.learned", new Print<String>() {
                     @Override
@@ -93,7 +93,7 @@ public class App_eo extends ListResourceBundle {
                         "Tio estis amuza!", "Estis agrable ludi kun vi!", "Dankon pro ludado!"
                 }},
                 {"game.again", new String[] {
-                        "Ĉu vi volas provi denove?", "Ĉu vi ŝatas ludi denove?", "Ĉu vi volas ripeti?", "Ĉu vi volas ludi denove?",
+                        "Ĉu vi volas provi denove?", "Ĉu vi satas ludi denove?", "Ĉu vi volas ripeti?", "Ĉu vi volas ludi denove?",
                         "Ankoraŭ unu ludo?", "Ĉu vi volas ludi denove?"
                 }},
 
@@ -108,7 +108,7 @@ public class App_eo extends ListResourceBundle {
                         "5. Kalkuli statistikojn\n" +
                         "6. Printi la Sciarbon\n" +
                         "0. Eliri"},
-                {"menu.error", "Bonvolu enigi numeron de 0 ĝis 6"},
+                {"menu.error", "Bonvolu enigi numeron de 0 gis 6"},
                 {"menu.choice", "Via elekto:"},
                 {"menu.prompt", "Enigu la beston:"},
 
@@ -143,7 +143,7 @@ public class App_eo extends ListResourceBundle {
                                         "\n   - totala nombro de deklaroj       %d" +
                                         "\n   - alteco de la arbo               %d" +
                                         "\n   - minimuma profundo               %d" +
-                                        "\n   - averaĝa profundo                %s\n",
+                                        "\n   - averaga profundo                %s\n",
                                 rootNode, data[0], data[1], data[2], data[3], data[4], String.format("%.1f", averageDepth));
                     }
                 }},
@@ -154,7 +154,7 @@ public class App_eo extends ListResourceBundle {
                     return "La " + animalName + " estis forigita de la sciobazo.";
                 }},
                 {"tree.delete.fail", (UnaryOperator<String>) animalName -> {
-                    return "La " + animalName + " ne troviĝis en la sciobazo.";
+                    return "La " + animalName + " ne trovigis en la sciobazo.";
                 }},
 
                 //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //  //
@@ -163,19 +163,19 @@ public class App_eo extends ListResourceBundle {
                 {"positiveAnswer.isCorrect", "(j|jes|certe)!?"},
                 {"negativeAnswer.isCorrect", "(n|ne)!?"},
 
-                {"statement.positive.is", "ĝi estas"},
-                {"statement.positive.can", "ĝi povas"},
-                {"statement.positive.has", "ĝi havas"},
+                {"statement.positive.is", "gi estas"},
+                {"statement.positive.can", "gi povas"},
+                {"statement.positive.has", "gi havas"},
 
-                {"statement.negative.is", "(ĝi )?ne estas"},
-                {"statement.negative.can", "(ĝi )?ne povas"},
-                {"statement.negative.has", "(ĝi )?ne havas"},
+                {"statement.negative.is", "(gi )?ne estas"},
+                {"statement.negative.can", "(gi )?ne povas"},
+                {"statement.negative.has", "(gi )?ne havas"},
 
-                {"statement.query.is", "Ĉu ĝi estas"},
-                {"statement.query.can", "Ĉu ĝi povas"},
-                {"statement.query.has", "Ĉu ĝi havas"},
+                {"statement.query.is", "Ĉu gi estas"},
+                {"statement.query.can", "Ĉu gi povas"},
+                {"statement.query.has", "Ĉu gi havas"},
 
-                {"statement.it", "Ĝi"},
+                {"statement.it", "Gi"},
                 {"statement.the", "La"},
 
                 {"statement.is", "estas"},

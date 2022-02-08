@@ -1,7 +1,5 @@
 package animals.game;
 
-import org.jetbrains.annotations.TestOnly;
-
 import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.Scanner;
@@ -53,7 +51,7 @@ public class Methods {
                     (negate ? unprocessedFact.replaceFirst(resourceBundle.getString("statement.positive.is"), resourceBundle.getString("statement.isn't")) :
                             unprocessedFact.replaceFirst("statement.it", "")))
                     .replaceFirst(resourceBundle.getString("statement.it"), "");
-            return str.replaceFirst("ĝi", "").replaceAll(" +", " ");
+            return str.replaceFirst("gi", "").replaceAll(" +", " ");
 
         } else if (unprocessedFact.matches(resourceBundle.getString("statement.positive.can") + " .*")) {
             String str = (resourceBundle.getString("statement.the") + " " + animal + " " +
@@ -61,14 +59,14 @@ public class Methods {
                             unprocessedFact.replaceFirst("statement.can", "")))
                     .replaceFirst(resourceBundle.getString("statement.it"), "");
 
-            return str.replaceFirst("ĝi", "").replaceAll(" +", " ");
+            return str.replaceFirst("gi", "").replaceAll(" +", " ");
         } else {
             String str = (resourceBundle.getString("statement.the") + " " + animal + " " +
                     (negate ? unprocessedFact.replaceFirst(resourceBundle.getString("statement.positive.has"), resourceBundle.getString("statement.doesn't have")) :
                             unprocessedFact.replaceFirst("statement.has", "")))
                     .replaceFirst(resourceBundle.getString("statement.it"), "");
 
-            return str.replaceFirst("ĝi", "").replaceAll(" +", " ");
+            return str.replaceFirst("gi", "").replaceAll(" +", " ");
         }
     }
 
@@ -118,7 +116,7 @@ public class Methods {
                 fact.contains(resourceBundle.getString("statement.negative.is")) ||
                 fact.contains(resourceBundle.getString("statement.negative.can")) ||
                 fact.contains(resourceBundle.getString("statement.negative.has")) ||
-                fact.contains("ĝi");
+                fact.contains("gi");
     }
 
     public static boolean getUserInputAsBoolean() {

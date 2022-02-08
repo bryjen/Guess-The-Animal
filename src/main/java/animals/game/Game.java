@@ -40,7 +40,7 @@ public class Game {
         }
 
         System.out.println("mi volas lerni pri bestoj.\n" +
-                "kiun beston vi plej ŝatas?\n" +
+                "kiun beston vi plej satas?\n" +
                 "\"");
         String animal = scanner.nextLine().trim().toLowerCase();
         root = new Tree(Methods.removePrefix(animal), Methods.addPrefix(animal));
