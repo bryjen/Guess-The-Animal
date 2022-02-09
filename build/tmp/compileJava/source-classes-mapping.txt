@@ -1,23 +1,23 @@
 App.java
  App
-animals/Run.java
- animals.Run
- animals.StartUp
+animals/game/Methods.java
+ animals.game.Methods
 App_eo.java
  App_eo
  App_eo$1
  App_eo$2
  App_eo$3
+animals/game/GuessingGame.java
+ animals.game.GuessingGame
+animals/data/Tree.java
+ animals.data.Tree
+animals/Print.java
+ animals.Print
+animals/game/Game.java
+ animals.game.Game
 animals/data/GetData.java
  animals.data.AnimalData
  animals.data.GetData
-animals/data/Tree.java
- animals.data.Tree
-animals/game/Game.java
- animals.game.Game
-animals/Print.java
- animals.Print
-animals/game/GuessingGame.java
- animals.game.GuessingGame
-animals/game/Methods.java
- animals.game.Methods
+animals/Run.java
+ animals.Run
+ animals.StartUp

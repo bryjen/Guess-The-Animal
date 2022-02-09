@@ -31,8 +31,21 @@ public class Run {
         language = resourceBundle.getString("language");
         StartUp.initialize(args);
         Tree tree;
+
         if (cleared) {
-            tree = null;
+
+            //TEST ONLY REMOVE WHEN DONE
+            Run.file = new File("animals" + (Run.language.equals("esperando") ? "_eo." : ".") + Run.fileType);
+
+            tree = new Tree("cat", "a cat");
+            tree.extend("shark", "a shark", "It is a mammal", "Is it a mammal?", true);
+            tree.yes.extend("fox", "a fox", "It is living in the forest", "Is it living in the forest?", false);
+            tree.yes.no.extend("dog", "a dog", "It can climb trees", "Can it climb trees?", true);
+            tree.yes.yes.extend("wolf", "a wolf", "It has a long bushy tail", "Does it have a long bushy tail?", true);
+            tree.yes.yes.no.extend("hare", "a hare", "It is a shy animal", "Is it a shy animal?", false);
+            //
+
+            //tree = null; RESTORE WHEN ABOVE DELETED
         } else {
             tree = StartUp.load();
         }
